@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'upload_pdf' %}">Upload</a></li>
+        <li><a href="{% url 'pdf_list' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    
+    {% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; My Website 2023</p>
+  </footer>
+</body>
+</html>

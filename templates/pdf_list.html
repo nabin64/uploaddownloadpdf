@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Uploaded PDF files</h1>
+  <ul>
+    {% for pdf in pdf_files %}
+      <li><a href="{% url 'download_pdf' pdf.id %}">{{ pdf.name }}</a></li>
+
+    {% endfor %}
+{% endblock %}
